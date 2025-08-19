@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 98%);
+  --foreground: hsl(210, 11%, 15%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 11%, 15%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(210, 11%, 15%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(45, 93%, 47%);
+  --primary-foreground: hsl(210, 11%, 15%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(210, 11%, 15%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(210, 11%, 15%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(45, 93%, 47%);
+  --radius: 0.5rem;
+  
+  /* LeanTechnovAtion Brand Colors */
+  --lean-primary: hsl(45, 93%, 47%);  /* Golden yellow from logo */
+  --lean-secondary: hsl(210, 11%, 15%); /* Dark text from logo */
+  --lean-accent-blue: hsl(217, 91%, 60%);
+  --lean-accent-green: hsl(142, 71%, 45%);
+  --lean-accent-purple: hsl(262, 83%, 58%);
+  --lean-accent-orange: hsl(45, 93%, 47%);
+  --lean-background: hsl(0, 0%, 98%);
+  --lean-card: hsl(0, 0%, 100%);
+}
+
+.dark {
+  --background: hsl(210, 11%, 15%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 16%, 57%);
+  --popover: hsl(210, 11%, 15%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(210, 11%, 15%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --primary: hsl(45, 93%, 47%);
+  --primary-foreground: hsl(210, 11%, 15%);
+  --secondary: hsl(217, 32%, 17%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 32%, 17%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(45, 93%, 47%);
+  
+  /* Dark mode brand colors */
+  --lean-primary: hsl(45, 93%, 47%);
+  --lean-secondary: hsl(210, 40%, 98%);
+  --lean-background: hsl(210, 11%, 15%);
+  --lean-card: hsl(217, 32%, 17%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom utility classes */
+.lean-text-primary {
+  color: var(--lean-primary);
+}
+
+.lean-text-secondary {
+  color: var(--lean-secondary);
+}
+
+.lean-bg-primary {
+  background-color: var(--lean-primary);
+}
+
+.lean-bg-secondary {
+  background-color: var(--lean-secondary);
+}
+
+.lean-bg-accent-blue {
+  background-color: var(--lean-accent-blue);
+}
+
+.lean-bg-accent-green {
+  background-color: var(--lean-accent-green);
+}
+
+.lean-bg-accent-purple {
+  background-color: var(--lean-accent-purple);
+}
+
+.lean-bg-accent-orange {
+  background-color: var(--lean-accent-orange);
+}
+
+.lean-border-primary {
+  border-color: var(--lean-primary);
+}
+
+.lean-hover-primary:hover {
+  background-color: hsl(41, 96%, 42%);
+}
